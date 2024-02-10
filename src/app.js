@@ -1,3 +1,4 @@
+require("dotenv").config();
 const path = require("path");
 const express = require("express");
 const exphbs = require("express-handlebars");
@@ -16,4 +17,10 @@ app.get("/", function (req, res) {
   res.render("home");
 });
 
-app.listen(1001);
+//config evironment
+const port = process.env.PORT;
+const localhost = process.env.localhost;
+
+app.listen(port, localhost, () => {
+  console.log(`Example app listening on port ${port}`);
+});

@@ -4,3 +4,5 @@
 
 - Nodejs, Expressjs
 - Handlebars
+- dotenv
+- Nodemon

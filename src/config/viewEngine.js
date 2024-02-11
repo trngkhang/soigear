@@ -11,6 +11,8 @@ const configViewEngine = (app) => {
   );
   app.set("view engine", ".hbs");
   app.set("views", path.join("./src", "views"));
+  //static file
+  app.use(express.static(path.join("./src", "public")));
 };
 
 module.exports = configViewEngine;

@@ -6,3 +6,8 @@
 - Handlebars
 - dotenv
 - Nodemon
+
+## About Project: 2
+
+- Admin
+- User

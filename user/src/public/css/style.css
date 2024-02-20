@@ -1,0 +1,71 @@
+:root {
+  --primary-color: #254753;
+}
+
+body {
+  box-sizing: border-box;
+}
+/* HEADER */
+.contact-phone {
+  background-image: url("https://bizweb.dktcdn.net/100/438/322/themes/837712/assets/call.svg?1699419237115");
+}
+.account-header {
+  background-image: url("https://bizweb.dktcdn.net/100/438/322/themes/837712/assets/users.svg?1699419237115");
+}
+.contact-phone,
+.account-header {
+  padding-left: 50px;
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: 10px 6px;
+  padding-left: 50px;
+  line-height: 20px;
+  display: inline-block;
+  /* margin-left: 15px; */
+}
+.contact-phone p,
+.account-header p {
+  font-size: 14px;
+  margin-bottom: 0px;
+}
+.contact-phone a,
+.account-header a {
+  font-size: 18px;
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+/*  */
+.header-group-account {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  grid-gap: 3px;
+  list-style: none;
+}
+.header-group-account li .icon {
+  display: inline-flex;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+}
+.header-group-account li .icon a {
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+}
+.header-group-account li .icon svg {
+  width: 25px;
+  height: 25px;
+}
+.header-group-account li .icon span {
+  position: absolute;
+  display: inline-block;
+  text-align: center;
+  font-size: 10px;
+  width: 17px;
+  height: 17px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+}

@@ -1,21 +1,59 @@
 <div class="header py-2">
   <div class="container">
     <div class="row d-flex align-items-center">
-      <div class="col-lg-2">
+      <div class="col-6 col-md-3 col-lg-2">
         <a href="/" class="d-block">
-          <img style="height: 80px;"
+          <img style="height: 80px; margin-left: -15px"
             src="https://bizweb.dktcdn.net/100/438/322/themes/837712/assets/logo.png?1704432870733"
             alt="soigear-logo" />
         </a>
       </div>
-      <div class="d-md-none col">2</div>
-      <div class="col-lg-8 col">
-        <div class="row gap-2">
-          <form class="col-lg-4" action="">
-            <div class="input-group border boder-2 border-secondary">
-              <input type="text" class="form-control border " placeholder="Search" name="search" />
+      <div class="col-3 d-block d-md-none order-3">
+        <nav class="navbar ">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header" style="background-color: #254753; color:white">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Danh mục sản phẩm</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">Trang chủ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Sản phẩm</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Kiến thức & Phần mềm</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Chính sách bảo hành</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Software Driver</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Liên hệ</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="col-9 col-md-6 col-lg-8 col-xl-8 order-3 order-md-2">
+        <div class="row">
+          <form class="col-12 col-lg-6" action="">
+            <div class="input-group border border-2 border-secondary">
+              <input type="text" class="form-control border" placeholder="Search" name="search" />
               <div class="input-group-btn">
-                <button class="btn btn-default border boder-0" type="submit">
+                <button class="btn btn-default border border-0" type="submit">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     class="bi bi-search" viewBox="0 0 16 16">
                     <path
@@ -26,18 +64,18 @@
               </div>
             </div>
           </form>
-          <div class="contact-phone col-lg-4 ps-5 d-none d-lg-block" style="">
+          <div class="col-lg-3 contact-phone ps-5 d-none d-lg-block" style="">
             <p>Tổng đài hỗ trợ/ Hotline</p>
             <a href="tel:0123456789">0123 456 789</a>
           </div>
-          <div class="account-header col-lg-3 ps-5 d-none d-lg-block">
+          <div class="col-lg-3 account-header ps-5 d-none d-lg-block">
             <p>Xin chào</p>
             <a href="">Đăng nhập</a>
           </div>
         </div>
       </div>
-      <div class="col-lg-2 col">
-        <ul class="header-group-account">
+      <div class="col-6 col-md-3 col-lg-2 col-xl-2 order-2 order-md-3">
+        <ul class="header-group-account mb-0 ps-0">
           <li>
             <div class="icon">
               <a href="" class="">
@@ -97,3 +135,37 @@
     </div>
   </div>
 </div>
+<nav class="navbar navbar-expand-lg nav-header py-0" aria-label="Tenth navbar example">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse justify-content-sm-center flex-direction-md-col d-md-block"
+      id="navbarsExample08">
+      <ul class="navbar-nav flex-md-row justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Trang chủ</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Sản phẩm</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Bàn phím cơ</a></li>
+            <li><a class="dropdown-item" href="#">Keycap</a></li>
+            <li><a class="dropdown-item" href="#">Switch</a></li>
+            <li><a class="dropdown-item" href="#">Phụ kiện</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Kiến thức & Phần mềm</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Chính sách bảo hành</a>
+        </li>
+        <li class="nav-item d-none d-xl-block">
+          <a class="nav-link" href="#">Software Driver</a>
+        </li>
+        <li class="nav-item d-none d-xl-block">
+          <a class="nav-link" href="#">Liên hệ</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>

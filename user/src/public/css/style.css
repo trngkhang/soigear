@@ -69,3 +69,13 @@ body {
   background-color: var(--primary-color);
   border-radius: 50%;
 }
+/*  */
+.nav-header {
+  background-color: var(--primary-color);
+}
+.nav-header .nav-link {
+  color: white !important ;
+}
+.nav-header li {
+  padding: 0px 20px;
+}

@@ -1,14 +1,19 @@
 :root {
   --primary-color: #254753;
   --second-color: #ffb416;
+  --footer-bg: #24272e;
+  --footer-text: #8b8e96;
 }
 
 body {
   box-sizing: border-box;
 }
 /* all */
-a::hover {
-  color: var(--second-color);
+a {
+  text-decoration: none !important;
+}
+a:hover {
+  color: var(--second-color) !important;
 }
 /* HEADER */
 .contact-phone {
@@ -120,4 +125,20 @@ a::hover {
 .cate-item h4 {
   font-size: 14px;
   line-height: 19px;
+}
+
+footer {
+  background-color: var(--footer-bg);
+  color: var(--footer-text);
+  font-size: 14px;
+}
+footer a {
+  color: var(--footer-text);
+}
+
+.btndkkm {
+  background-color: var(--primary-color) !important;
+}
+.abc {
+  box-sizing: border-box !important;
 }

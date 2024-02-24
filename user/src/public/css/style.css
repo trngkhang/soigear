@@ -1,9 +1,14 @@
 :root {
   --primary-color: #254753;
+  --second-color: #ffb416;
 }
 
 body {
   box-sizing: border-box;
+}
+/* all */
+a::hover {
+  color: var(--second-color);
 }
 /* HEADER */
 .contact-phone {
@@ -78,4 +83,41 @@ body {
 }
 .nav-header li {
   padding: 0px 20px;
+}
+
+/* swwiper category */
+.section-category,
+.cate-swiper {
+  position: relative;
+  height: 100%;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cate-item a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: var(--primary-color);
+}
+.cate-item img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.cate-item h4 {
+  font-size: 14px;
+  line-height: 19px;
 }

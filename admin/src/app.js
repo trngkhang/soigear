@@ -3,13 +3,17 @@ const path = require("path");
 const express = require("express");
 const configViewEngine = require("./config/viewEngine");
 const app = express();
-const webRoutes = require("./routes/web.routes");
+const route = require("./routes/index.routes");
 
 //template engine
 configViewEngine(app);
 
+//json
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
 //route
-app.use("/", webRoutes);
+route(app);
 
 //config evironment
 const port = process.env.PORT;

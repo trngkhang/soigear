@@ -6,7 +6,13 @@ const allUsers = async () => {
   );
   return results;
 };
-
+const createUser = async (user) => {
+  const [results] = await connection.query(
+    `INSERT INTO Users (email, password, name, address) Values(?, ? ,? ,?)`,
+    [user.email, user.password, user.name, user.address]
+  );
+};
 module.exports = {
   allUsers,
+  createUser,
 };

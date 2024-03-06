@@ -22,11 +22,14 @@
         <td>{{this.name}}</td>
         <td>{{this.address}}</td>
         <td>
-          <button type="button" class="btn btn-warning py-0">Sửa</button>
+          <a
+            class="btn btn-warning py-0"
+            href="/users/{{this.user_id}}/edit"
+            role="button"
+          >Sửa</a>
           <button type="button" class="btn btn-danger py-0">Xóa</button>
         </td>
       </tr>
     {{/each}}
   </tbody>
-
 </table>

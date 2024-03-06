@@ -7,6 +7,9 @@ const configViewEngine = (app) => {
     ".hbs",
     exphbs.engine({
       extname: ".hbs", // Mở rộng mặc định của handlebars sẽ là .hbs
+      helpers: {
+        sum: (a, b) => a + b,
+      },
     })
   );
   app.set("view engine", ".hbs");
